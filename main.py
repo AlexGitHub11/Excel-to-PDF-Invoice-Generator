@@ -9,6 +9,7 @@ filepaths = glob.glob("invoices/*.xlsx")
 
 for filepath in filepaths:
 
+    # Define pdf layout
     pdf = FPDF(orientation="P", unit="mm", format="A4")
     pdf.add_page()
 
